@@ -1,0 +1,195 @@
+#container {
+    height: 500px;
+    width: 1000px;
+    position: absolute;
+}
+
+#title {
+    margin-left: 180px;
+    text-align: center;
+}
+
+.top {
+  font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+    position: absolute;
+    padding-top: 15px;
+    font-size: 30px;
+    animation: boxBuildIn .7s;
+    margin-left: 180px;
+    text-align: center;
+}
+
+.bigBox {
+    background-color: navy;
+    position: absolute;
+    width:650px;
+    height: 100px;
+    animation: boxBuildIn .7s;
+}
+
+#headingBox {
+    margin-top: 60px;
+    margin-left: 175px;
+}
+
+.lilBox {
+    background-color: purple;
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    padding: 20px;
+    animation: boxBuildIn .7s;
+}
+
+#one {
+    margin-top: 170px;
+    margin-left: 210px;
+
+}
+
+#two {
+    margin-top: 170px;
+    margin-left: 410px;
+}
+
+#three {
+    margin-top: 170px;
+    margin-left: 610px;
+}
+
+#four {
+    margin-top: 300px;
+    margin-left: 210px;
+}
+
+#five {
+    margin-top: 300px;
+    margin-left: 410px;
+}
+
+#six {
+    margin-top: 300px;
+    margin-left: 610px;
+}
+
+.boxOver {
+  animation: boxOver .7s;
+  animation-fill-mode: both;
+}
+
+.boxOut {
+  animation: boxOut .7s;
+  animation-fill-mode: both;
+}
+
+.bigBoxOver {
+  animation: bigBoxOver .7s;
+  animation-fill-mode: both;
+}
+
+.bigBoxOut {
+  animation: bigBoxOut .7s;
+  animation-fill-mode: both;
+}
+
+.titleOver {
+  animation: titleOver .7s;
+  animation-fill-mode: both;
+}
+
+.titleOut {
+  animation: titleOut .7s;
+  animation-fill-mode: both;
+}
+
+.makeItSpin {
+  animation: makeItSpin .7s;
+  animation-fill-mode: both;
+}
+
+@keyframes boxBuildIn {
+    from{
+        opacity: 0;
+        transform: scale(.2) rotateZ(130deg) rotateX(130deg);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes boxOver {
+  to{
+    transform: scale(1.2);
+    opacity: 1;
+    background-color: #FFB6C1;
+  }
+}
+
+@keyframes boxOut {
+  from {
+    opacity: 1;
+    transform: scale(1.2);
+    background-color: #FFB6C1;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    background-color: purple;
+  }
+}
+
+@keyframes bigBoxOver {
+  to{
+    transform: scale(1.2);
+    opacity: 1;
+    background-color: #28f7f7;
+  }
+}
+
+@keyframes bigBoxOut {
+  from {
+    opacity: 1;
+    transform: scale(1.2);
+    background-color: #28f7f7;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    background-color: navy;
+  }
+}
+
+@keyframes titleOver {
+  to{
+    transform: scale(1.2);
+    opacity: 1;
+    color: #28f7f7;
+  }
+}
+
+@keyframes titleOut {
+  from {
+    opacity: 1;
+    transform: scale(1.2);
+    color: #28f7f7;
+    
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    color: navy;
+  }
+}
+
+@keyframes makeItSpin {
+  from{
+    transform: scale(1.2);
+    opacity: 1;
+    background-color: #FFB6C1;
+  }
+  to {
+    transform: scale(.2) rotateZ(130deg) rotateX(130deg);
+    opacity: 0;
+  }
+}
