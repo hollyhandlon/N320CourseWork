@@ -1,0 +1,58 @@
+body {
+    background:darkviolet;
+    text-align: center;
+}
+.student {
+    border-radius: 4px;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    background-color: #eee;
+    color: teal; 
+    display: inline-block;
+}
+.arrow {
+    cursor: pointer;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    background:darkviolet;
+    font-size: 20px;
+}
+
+/*for forward button*/
+.cardForward {
+    animation: disappearFront 1s;
+    
+}
+
+
+/*for back button*/
+.cardBack {
+    animation: disappearBack 1s;
+}
+
+
+@keyframes disappearBack {
+    from{
+        opacity: 1;
+    }
+    to{
+        transform: translateX(-100px);
+        opacity: 0;
+    } 
+}
+
+@keyframes disappearFront {
+    from{
+        opacity: 1;
+    }
+    to{
+        transform: translateX(100px);
+        opacity: 0;
+    } 
+}

@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week 5 - Vue.js</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+
 </head>
 <body>
     <!-- data binding -->
     <div id="app">
+        <div class="arrow" v-on:click="backArrowClicked"> 👈 </div>
         <!-- v-bind:student is referring to props: ["student" ]-->
         <!-- currentStudent is referring to variable set in var app-->
-        <student-card v-bind:student="currentStudent"></student-card>    
+        <student-card v-bind:student="currentStudent" v-bind:isforward="cardForward" v-bind:isback="cardBack"></student-card>
+        <div class="arrow" v-on:click="frontArrowClicked"> 👉 </div>
+            
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
