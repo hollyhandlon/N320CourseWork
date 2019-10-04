@@ -41,8 +41,7 @@ var app = new Vue({
                 //set the id to -1 so it can call the 0 position
                 this.curStudentId = -1;
             }
-            //use id number to retrieve array item and make it equal to currentStudent
-            console.log(this.curStudentId);
+            
             //turn its boolean into its opposite
             this.cardForward = !this.cardForward;
     
@@ -54,16 +53,11 @@ var app = new Vue({
             this.curStudentId--;
             //if curStudent is -1 then set that to the last position in array
             if(this.curStudentId < 0) {
-                
                 this.curStudentId = this.students.length-1;
-                console.log(this.curStudentId);
             }
-
-            this.curStudentId--;
             
             //use id number to ertrieve the array item and make it equal to the currentStudent
             this.currentStudent = this.students[this.curStudentId];
-            console.log(this.curStudentId);
             //turn its boolean into its opposite
             this.cardBack = !this.cardBack;
             
