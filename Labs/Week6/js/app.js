@@ -38,20 +38,25 @@ var app = new Vue({
             
             var message = ""
             //check verticle matches
+            //run a loop that will go through each scenario of 4 matches for each columnm
             for (let col = 0; col < 7; col++) {
+                //if all four positons = 1, then player 1 wins
                 if(this.grid[5][col] == 1 && this.grid[4][col] == 1 && this.grid[3][col] == 1 && this.grid[2][col] == 1 ){
+                    //check
                     console.log("Player 1 wins!");
-                    
+                    //deifne message
                     message = "Game over: Player 1 wins!";
                     
                 }
+                //if all four positons = 2, then player 2 wins
                 else if(this.grid[5][col] == 2 && this.grid[4][col] == 2 && this.grid[3][col] == 2 && this.grid[2][col] == 2 ){
+                    //check
                     console.log("Player 2 wins!");
+                    //define message
                     message = "Game over: Player 2 wins!"
                     
                 }
-                
-    
+                   
                 //scenario 2
                 if(this.grid[4][col] == 1 && this.grid[3][col] == 1 && this.grid[2][col] == 1 && this.grid[1][col] == 1){
                     console.log("Player 1 wins!");
@@ -81,16 +86,22 @@ var app = new Vue({
             }
     
             //check horizontal
+            //run a loop that will go through each scenario of 4 matches in a row
             for(let row = 5; row > 0; row--) {
                 //scenario 1
+                //if all four positions = 1, then player 1 wins
                 if(this.grid[row][0] == 1 && this.grid[row][1] == 1 && this.grid[row][2] == 1 && this.grid[row][3] == 1){
+                    //check
                     console.log("Player 1 wins!");
-                    
+                    //define the message
                     message = "Game over: Player 1 wins!";
                     
                 }
+                //if all four position = 2, then player 2 wins
                 else if(this.grid[row][0] == 2 && this.grid[row][1] == 2 && this.grid[row][2] == 2 && this.grid[row][3] == 2) {
+                    //check
                     console.log("Player 2 wins!");
+                    //define message
                     message = "Game over: Player 2 wins!"
                     
                 }
@@ -134,7 +145,7 @@ var app = new Vue({
                     
                 }
             }
-
+            //put the message on the page
             document.getElementById("message").innerHTML = message;
             
         },
