@@ -1,0 +1,27 @@
+
+{ 
+    "Albums" : [
+        { "name" : "Master of Puppets", "rating" : 5, "year" : "1986", "tracks" : [
+            "Battery", 
+            "Master of Puppets", 
+            "The Thing That Should Not Be", 
+            "Welcome Home (Sanitarium)", 
+            "Disposable Heroes", 
+            "Leper Messiah", 
+            "Orion",
+            "Damage Inc."
+        ] },
+        { "name" : "Load", "rating" : 100, "year" : "1996", "tracks" : [
+            "2 x 4", 
+            "The House That Jack Built", 
+            "Until It Sleeps", 
+            "King Nothing", 
+            "Hero Of The Day", 
+            "Bleeding Me", 
+            "Cure",
+            "Poor Twisted Me"
+        ] }
+
+    ] 
+}
+    

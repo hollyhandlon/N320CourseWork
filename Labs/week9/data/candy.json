@@ -1,0 +1,10 @@
+{
+    "meta" : {
+        "type" : "top three"
+    },
+    "candy" : [
+        { "name" : "Kit Kat", "rating" : "good", "chocolate" : true, "deliciousness" : 70 },
+        { "name" : "Sour Patch Kids", "rating" : "OK", "chocolate" : false, "deliciousness" : 10 },
+        { "name" : "Crunch", "rating" : "good", "chocolate" : true, "deliciousness" : 95 }
+    ]
+}
