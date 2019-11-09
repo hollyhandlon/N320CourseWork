@@ -39,13 +39,12 @@ function createScene() {
     var light = new BABYLON.HemisphericLight("HemLight", 
                     new BABYLON.Vector3(1, 1, 0), scene);
 
-    //tweak colors
+    //make a blue material
     blueMat = new BABYLON.StandardMaterial("blue", scene);
     blueMat.diffuseColor = new BABYLON.Color3(0.4, 0.4, 1);
     blueMat.specularColor = new BABYLON.Color3(0.4, 0.4, 0.4);
     blueMat.emissiveColor = BABYLON.Color3.Blue();
 
-    //sphere.material = blueMat;
     return scene;
 }
 
@@ -70,20 +69,25 @@ window.addEventListener("keydown", function(event) {
 
 //this will check to see if the boxes positions match
 function checkOver() {
+
+    //store the rounded positions of the mesh
     var oneX = Math.round(boxOne.rotation.x);
     var twoX = Math.round(boxTwo.rotation.x);
     var threeX = Math.round(boxThree.rotation.x);
 
+    //post positions in console
     console.log(oneX, twoX, threeX);
 
+    //if the postions of all three meshes match
     if(oneX == twoX && oneX == threeX) {
         console.log("Unlocked!");
 
+        //make a green material
         greenMat = new BABYLON.StandardMaterial("green", scene);
         greenMat.diffuseColor = new BABYLON.Color3(0.4, 1, 0.4);
         greenMat.specularColor = new BABYLON.Color3(0.4, 0.4, 0.4);
         greenMat.emissiveColor = BABYLON.Color3.Green();
-
+        //add the green to all meshes
         boxOne.material = greenMat;
         boxTwo.material = greenMat;
         boxThree.material = greenMat;
@@ -92,17 +96,6 @@ function checkOver() {
     else {
         console.log("Try again");
     }
-    
-
-    // if(oneX == twoX == threeX) {
-    //     console.log("Unlocked!");
-    // }
-
-    // else {
-    //     console.log("Try again");
-    // }
-    
-
 }
 
 //this listens for a click event -- turning the clicked item blue
@@ -116,8 +109,13 @@ window.addEventListener("click", function () {
         selectedMesh = pickResult.pickedMesh;
     }
     else {
-        pickResult.pickedMesh.material = null;
+        //make a white material
+        whiteMat = new BABYLON.StandardMaterial("white", scene);
+        whiteMat.emissiveColor = BABYLON.Color3.White();
+        //turn the preciously selected shape to white
+        pickResult.pickedMesh.material = whiteMat;
 
+        //manipulate the new shape
         pickResult = scene.pick(scene.pointerX, scene.pointerY);
         //add material to the result
         pickResult.pickedMesh.material = blueMat;
