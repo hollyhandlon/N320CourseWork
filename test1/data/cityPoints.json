@@ -1,0 +1,56 @@
+{
+    "cities": [
+        { "name": "Ba Seng Sei", 
+            "x" : 40, 
+            "y" : 6, 
+            "z" : 40, 
+            "mat" : "textures/earth.png",
+            "info" : "bvhid" },
+        { "name": "Ginsen Temple", 
+            "x": 56, 
+            "y": 2, 
+            "z" : 24, 
+            "mat" : "textures/earth.png",
+            "info" : "ewweirf" },
+        { "name": "Shai City", 
+            "x": -6, 
+            "y": 8, 
+            "z" : 75, 
+            "mat" : "textures/water.jpg",
+            "info" : "xwnece" },
+        { "name": "The Library", 
+            "x": 30, 
+            "y": 4, 
+            "z" : 5, 
+            "mat" : "textures/earth.png",
+            "info" : "kolp" },
+        { "name": "Shuen City", 
+            "x": -18, 
+            "y": 8, 
+            "z" : -70, 
+            "mat" : "textures/water.jpg",
+            "info" : "weiuiefhre" }
+        
+    ],
+
+    "extras" : [
+        { "name": "Southern Air Temple", "x": 450.6, "y": 367.3, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Western Air Temple", "x": 370.6, "y": 147.3, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Northern Air Temple", "x": 528.6, "y": 100.6, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Eastern Air Temple", "x": 654.6, "y": 282.0, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Omashu", "x": 530.0, "y": 254.6, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Kei Lan", "x": 502.6, "y": 224, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Tachi Dai", "x": 486.0, "y": 150.0, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Zhy", "x": 402.6, "y": 169.3, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Gaoling", "x": 564.0, "y": 327.3, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Kyoshi", "x": 515.3, "y" : 409.3, "z" : 2, "mat" : "textures/earth.png" },
+        { "name": "Soma Temple", "x": 435.3, "y": 230.6, "z" : 2, "mat" : "textures/fire.png" },
+        { "name": "Shu", "x": 386.6, "y": 252.0, "z" : 2, "mat" : "textures/fire.png" },
+        { "name": "Yin Rei", "x": 336.6, "y": 263.3, "z" : 2, "mat" : "textures/fire.png" },
+        { "name": "Lun Yang", "x": 243.3, "y": 242.6, "z" : 2, "mat" : "textures/fire.png" },
+        { "name": "Sun Sei", "x": 214.6, "y": 202.0, "z" : 2, "mat" : "textures/fire.png" },
+        { "name": "Hokage", "x": -49, "y": 2, "z" : 7, "mat" : "textures/fire.png" },
+        { "name": "Foggy Swamp", "x": 552, "y": 286.6, "z" : 2, "mat" : "textures/earth.png" }
+    ]
+}
+

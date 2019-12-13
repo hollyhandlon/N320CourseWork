@@ -33,7 +33,12 @@ class Ground {
             this.b++;
             //restart the count at zero so the blue can be added EVERY 10 DROPS
             this.count = 0;
+            
+            if(this.b >= 255) {
+                this.b = 0;
+            }
         }
+        
     }
 
 }
