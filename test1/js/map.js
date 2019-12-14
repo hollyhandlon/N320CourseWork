@@ -41,7 +41,7 @@ fetch("data/cityPoints.json", { method: 'get' })
                     //console.log(cube.dataId);
                     regionInfo = data.cities[cube.dataId];
                     //console.log(regionInfo);
-                    infoBox.innerHTML = regionInfo.info;
+                    infoBox.innerHTML = regionInfo.name
 
 
                 }
@@ -105,22 +105,22 @@ var createScene = function () {
 };
 
 //add an event listener on click to show more information in info box
-window.addEventListener("mouseover", function() {
-    //get the pick result and save the picked mesh
-    var pickResult = scene.pick(scene.pointerX, scene.pointerY);
-    var selectedObject = pickResult.pickedMesh;
+// window.addEventListener("mouseover", function() {
+//     //get the pick result and save the picked mesh
+//     var pickResult = scene.pick(scene.pointerX, scene.pointerY);
+//     var selectedObject = pickResult.pickedMesh;
     
-    //check if a mesh is picked
-    if(selectedObject) {
-        //save the dataId associated with mesh
-        var dataId = selectedObject.dataId;
+//     //check if a mesh is picked
+//     if(selectedObject) {
+//         //save the dataId associated with mesh
+//         var dataId = selectedObject.dataId;
         
-        regionInfo = data.cities[dataId];
-        console.log(regionInfo);
-        console.log(regionInfo.name);
-        infoBox.innerHTML = regionInfo.info;
-    }
-})
+//         regionInfo = data.cities[dataId];
+//         console.log(regionInfo);
+//         console.log(regionInfo.name);
+        
+//     }
+// })
 
 scene = createScene();
 engine.runRenderLoop(function() {
