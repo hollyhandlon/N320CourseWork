@@ -29,13 +29,15 @@
             "y": 8, 
             "z" : -70, 
             "mat" : "textures/water.jpg",
-            "info" : "weiuiefhre" }
+            "info" : "weiuiefhre" },
+        { "name": "Southern Air Temple", "x": -16, "y": 5, "z" : -50, "mat" : "textures/air.jpg" },
+        { "name": "Western Air Temple", "x": -57, "y": 3, "z" : 36, "mat" : "textures/air.jpg" }
         
     ],
 
     "extras" : [
-        { "name": "Southern Air Temple", "x": 450.6, "y": 367.3, "z" : 2, "mat" : "textures/earth.png" },
-        { "name": "Western Air Temple", "x": 370.6, "y": 147.3, "z" : 2, "mat" : "textures/earth.png" },
+        
+        
         { "name": "Northern Air Temple", "x": 528.6, "y": 100.6, "z" : 2, "mat" : "textures/earth.png" },
         { "name": "Eastern Air Temple", "x": 654.6, "y": 282.0, "z" : 2, "mat" : "textures/earth.png" },
         { "name": "Omashu", "x": 530.0, "y": 254.6, "z" : 2, "mat" : "textures/earth.png" },

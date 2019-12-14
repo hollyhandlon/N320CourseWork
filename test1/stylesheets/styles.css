@@ -1,0 +1,272 @@
+
+/***********************************************************************************************/
+/*Styles for start page*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../data/images/start_back.jpg');
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.welcome {
+  text-align: center;
+  padding: 30px;
+  font-family: Herculanum;
+  font-size: 50px;
+  color: white;
+  
+}
+
+.subHead {
+  display: inline-block;
+  font-family: Herculanum;
+  font-size: 20px;
+  color: white;
+  width: 600px;
+  line-height: 20px;
+}
+
+.linkContainer {
+  text-align: center;
+  padding: 20px;
+}
+.mapLink {
+  margin-top: 80px;
+  margin-right: 150px;
+  display: inline-block;
+  width: 250px;
+  border: 3px solid white;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  height: 90px;
+  font-family: Herculanum;
+  font-size: 25px;
+  color: white;
+  box-shadow: 0 0 10px white;
+  text-decoration: none;
+}
+.charLink {
+  margin-top: 80px;
+  margin-left: 150px;
+  display: inline-block;
+  width: 250px;
+  border: 3px solid white;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+  height: 90px;
+  font-family: Herculanum;
+  font-size: 25px;
+  color: white;
+  box-shadow: 0 0 10px white;
+  text-decoration: none;
+}
+
+/*Animation*/
+.mapLink:hover {
+  animation: linkOver .7s;
+  animation-fill-mode: both;
+}
+
+.charLink:hover {
+  animation: linkOver .7s;
+  animation-fill-mode: both;
+}
+
+@keyframes linkOver {
+  to{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+
+/***********************************************************************************************/
+/*Styles for character page*/
+
+.container3 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../data/images/char_back.jpg');
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+
+.characterDiv {
+    text-align: center;
+    margin: auto;
+    font-family: Herculanum;
+    font-size: 50px;
+    width: 800px;
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 12px;
+    padding: 10px;
+    height: 390px;
+    animation: charBuildIn .7s;
+    animation-fill-mode: both;
+    
+}
+
+.leftSide {
+    float: left;
+}
+
+.imgDiv {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    font-family: Herculanum;
+    font-size: 50px;
+    color: orange;
+}
+
+.rightSide {
+  float: right;
+
+}
+
+.textDiv {
+    width: 300px;
+    height: 360px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    margin-right: 20px;
+}
+
+
+
+.selectChar {
+  display: inline-block;
+}
+
+
+/*character selection animations*/
+
+.Aang {
+  animation: charBuildIn .7s;
+  animation-fill-mode: both;
+}
+
+.Katara{
+  animation: charBuildIn .7s;
+  animation-fill-mode: both;
+}
+
+.Toph{
+  animation: charBuildIn .7s;
+  animation-fill-mode: both;
+}
+
+.Sokka{
+  animation: charBuildIn .7s;
+  animation-fill-mode: both;
+}
+
+.Zuko{
+  animation: charBuildIn .7s;
+  animation-fill-mode: both;
+}
+
+.Iroh{
+  animation: charBuildIn .7s;
+  animation-fill-mode: both;
+}
+
+.Aang:hover{
+  animation: charIconOver .2s;
+  animation-fill-mode: both;
+}
+
+.Katara:hover{
+  animation: charIconOver .2s;
+  animation-fill-mode: both;
+}
+
+.Toph:hover{
+  animation: charIconOver .2s;
+  animation-fill-mode: both;
+}
+
+.Sokka:hover{
+  animation: charIconOver .2s;
+  animation-fill-mode: both;
+}
+
+.Zuko:hover{
+  animation: charIconOver .2s;
+  animation-fill-mode: both;
+}
+
+.Iroh:hover{
+  animation: charIconOver .2s;
+  animation-fill-mode: both;
+}
+
+
+ .charIconOut {
+     animation: charIconOut .7s;
+     animation-fill-mode: both;
+ }
+
+ @keyframes charIconOver {
+  to{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes charBuildIn {
+  from {
+    opacity: 0;
+    transform: scale(.2) rotateZ(130deg) rotateX(130deg);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mapContainer {
+  display: flex;
+  padding: 10px;
+}
+
+#infoBox {
+  width: 300px;
+  height:250px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  margin-left: 5px;
+  animation: boxBuildIn .7s;
+}
+
+#renderCanvas {
+  padding: 10;
+  animation: boxBuildIn .7s;
+}
+
+@keyframes boxBuildIn {
+  from{
+      opacity: 0;
+      transform: scale(.2) rotateZ(130deg) rotateX(130deg);
+  }
+  to {
+      opacity: 1;
+  }
+}
